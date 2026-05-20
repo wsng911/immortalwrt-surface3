@@ -56,6 +56,13 @@ sync && poweroff
 
 管理地址：`http://192.168.11.251`
 
+**⚠️ 首次启动必须执行（修复 OpenClash LuCI 兼容性）：**
+
+```bash
+opkg update
+opkg install --force-reinstall luci-compat
+```
+
 **修复网关（如果无法上网）：**
 
 ```bash
